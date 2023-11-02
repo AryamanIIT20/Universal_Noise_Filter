@@ -1,6 +1,6 @@
-function [stdev_estimate] = estimate_noise_stdev(img,nbd,s_i)
+function [stdev_estimate] = estimate_noise_stdev(img,nbd,s_i) % Estimate quasi-gaussian noise standard deviation 
 [M,N] = size(img);
-L = [1,-2,1;-2,4,-2;1,-2,1];
+L = [1,-2,1;-2,4,-2;1,-2,1]; % Kernel of Laplacian Filter
 img_lap = myconv2d(img,L);
 img_padded = zeros(M+2*nbd,N+2*nbd);
 img_padded(nbd+1:nbd+M,nbd+1:nbd+N) = img;
