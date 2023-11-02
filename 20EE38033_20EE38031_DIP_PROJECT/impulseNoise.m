@@ -1,4 +1,4 @@
-function [img_noisy] = impulseNoise(img,p)
+function [img_noisy] = impulseNoise(img,p) % Adds random impulse noise of probability p to image
 [M,N] = size(img);
 img_noisy = img;
 for i = 1:M
