@@ -1,4 +1,4 @@
-function [img_conv] = myconv2d(img,kernel)
+function [img_conv] = myconv2d(img,kernel) % Custom 2D-convolution function that implements conv2(img,kernel,'same')
 kernel = rot90(kernel,2);
 [h,w] = size(kernel);
 M = (w-1)/2;
@@ -14,6 +14,6 @@ for x = 1:wt
         img_conv(y,x) = sum(slice.*kernel,"all");
     end
 end
-% img_conv = uint8(img_conv);
+
 end
 
