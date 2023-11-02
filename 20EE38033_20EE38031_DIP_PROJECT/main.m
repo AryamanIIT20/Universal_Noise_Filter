@@ -14,7 +14,7 @@ s_j = 50;
 
 img_orig = imread("lena.tif");
 [M,N] = size(img_orig);
-img_noisy = imnoise(img_orig,"salt & pepper",p);
+img_noisy = impulseNoise(img_orig,p);
 img_noisy = gaussian_noise(img_noisy,stdev);
 
 tgt = UNF_filter(img_noisy,nbd,s_s,s_i,s_j);
