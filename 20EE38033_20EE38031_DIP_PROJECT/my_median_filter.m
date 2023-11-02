@@ -1,4 +1,4 @@
-function tgt = my_median_filter(img,nbd_size)
+function tgt = my_median_filter(img,nbd_size) % Runs a median filter of size (2*nbd_size+1)x(2*nbd_size+1) on the image
 nbd = nbd_size;
 img = double(img);
 [M,N] = size(img);
