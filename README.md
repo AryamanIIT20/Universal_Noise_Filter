@@ -7,3 +7,8 @@ Contributors:
 
 Video Link:
 https://youtu.be/f4NZ7W-_KYY?feature=shared
+
+Future Scope:
+Code vectorization
+Generating kernel weights from pre-computed look up table
+Parallel computation of weights for each pixel neighbourhood
