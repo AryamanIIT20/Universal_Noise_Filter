@@ -9,6 +9,6 @@ Video Link:
 https://youtu.be/f4NZ7W-_KYY?feature=shared
 
 Future Scope:
-Code vectorization
-Generating kernel weights from pre-computed look up table
-Parallel computation of weights for each pixel neighbourhood
+1. Code vectorization
+2. Generating kernel weights from pre-computed look up table
+3. Parallel computation of weights for each pixel neighbourhood
